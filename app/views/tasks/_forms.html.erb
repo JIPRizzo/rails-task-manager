@@ -1,0 +1,10 @@
+<!--
+If we need to change the form in edit and create, it's best to do it in one place. -->
+
+<%= form_for @task do |a| %>
+<%= a.label :name, "Enter a Task" %>
+<%= a.text_field :name %>
+<%= a.label :description, "Describe Task" %>
+<%= a.text_field :description %>
+<%= a.submit %>
+<% end %>
