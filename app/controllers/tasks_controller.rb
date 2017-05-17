@@ -16,7 +16,7 @@ before_action :set_task, only: [:show, :edit, :update, :destroy]
 
   def create
     Task.create(task_params)
-    redirect_to tasks_path
+    redirect_to tasks_pathath
   end
 
   def edit
